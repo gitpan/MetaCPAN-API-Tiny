@@ -24,12 +24,12 @@ my %WriteMakefileArgs = (
   "NAME" => "MetaCPAN::API::Tiny",
   "PREREQ_PM" => {
     "Carp" => 0,
-    "HTTP::Tiny" => 0,
+    "HTTP::Tiny" => "0.017",
     "JSON::PP" => 0,
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "1.120920",
+  "VERSION" => "1.121020",
   "test" => {
     "TESTS" => "t/*.t"
   }

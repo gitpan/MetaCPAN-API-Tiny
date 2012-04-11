@@ -1,6 +1,6 @@
 package MetaCPAN::API::Tiny;
 {
-  $MetaCPAN::API::Tiny::VERSION = '1.120920';
+  $MetaCPAN::API::Tiny::VERSION = '1.121020';
 }
 use strict;
 use warnings;
@@ -285,7 +285,7 @@ MetaCPAN::API::Tiny - A Tiny API client for MetaCPAN
 
 =head1 VERSION
 
-version 1.120920
+version 1.121020
 
 =head1 DESCRIPTION
 

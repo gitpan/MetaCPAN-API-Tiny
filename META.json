@@ -22,7 +22,7 @@
       "runtime" : {
          "requires" : {
             "Carp" : 0,
-            "HTTP::Tiny" : 0,
+            "HTTP::Tiny" : "0.017",
             "JSON::PP" : 0,
             "strict" : 0,
             "warnings" : 0
@@ -42,6 +42,6 @@
          "url" : "git://github.com/nperez/metacpan-api-tiny"
       }
    },
-   "version" : "1.120920"
+   "version" : "1.121020"
 }
 
