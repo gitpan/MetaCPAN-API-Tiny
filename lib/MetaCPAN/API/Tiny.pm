@@ -1,6 +1,6 @@
 package MetaCPAN::API::Tiny;
 {
-  $MetaCPAN::API::Tiny::VERSION = '1.121020';
+  $MetaCPAN::API::Tiny::VERSION = '1.131730';
 }
 use strict;
 use warnings;
@@ -50,7 +50,7 @@ sub _build_extra_params {
         $extra{$key} =~ s/\+/%20/g;
     }
 
-    my $params = join '&', map { "$_=" . $extra{$_} } keys %extra;
+    my $params = join '&', map { "$_=" . $extra{$_} } sort keys %extra;
 
     return $params;
 }
@@ -275,7 +275,7 @@ sub _decode_result {
 
 1;
 
-
+__END__
 
 =pod
 
@@ -285,7 +285,7 @@ MetaCPAN::API::Tiny - A Tiny API client for MetaCPAN
 
 =head1 VERSION
 
-version 1.121020
+version 1.131730
 
 =head1 DESCRIPTION
 
@@ -433,12 +433,9 @@ Nicholas R. Perez <nperez@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Nicholas R. Perez <nperez@cpan.org>.
+This software is copyright (c) 2013 by Nicholas R. Perez <nperez@cpan.org>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
-
-__END__
